@@ -1,0 +1,308 @@
+# Instincts generated from https://github.com/JamesWilliam1977/chatgpt-on-wechat
+# Generated: 2026-06-01T07:34:27.982Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: chatgpt-on-wechat-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/chatgpt-on-wechat
+---
+
+# Chatgpt On Wechat Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: docs
+
+## Evidence
+
+- 2 commits analyzed
+- Detected conventional commit pattern
+- Examples: docs: add contributing guide and issue/PR templates, docs: update issue/pr templates
+
+---
+id: chatgpt-on-wechat-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/chatgpt-on-wechat
+---
+
+# Chatgpt On Wechat Commit Length
+
+## Action
+
+Keep commit messages concise (~41 characters)
+
+## Evidence
+
+- Average commit message length: 41 chars
+- Based on 2 commits
+
+---
+id: chatgpt-on-wechat-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/chatgpt-on-wechat
+---
+
+# Chatgpt On Wechat Naming Files
+
+## Action
+
+Use PascalCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: PascalCase
+
+---
+id: chatgpt-on-wechat-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/chatgpt-on-wechat
+---
+
+# Chatgpt On Wechat Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: chatgpt-on-wechat-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/chatgpt-on-wechat
+---
+
+# Chatgpt On Wechat Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: chatgpt-on-wechat-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/chatgpt-on-wechat
+---
+
+# Chatgpt On Wechat Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: chatgpt-on-wechat-workflow-update-contribution-and-issue-templates
+trigger: "when doing update contribution and issue templates"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/chatgpt-on-wechat
+---
+
+# Chatgpt On Wechat Workflow Update Contribution And Issue Templates
+
+## Action
+
+Follow the update-contribution-and-issue-templates workflow:
+1. Edit or create files in .github/ISSUE_TEMPLATE/ (e.g., 1.bug.yml, 2.feature.yml, config.yml)
+2. Edit or create .github/PULL_REQUEST_TEMPLATE.md
+3. Edit or create CONTRIBUTING.md
+4. Commit changes with a docs-related message
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: .github/ISSUE_TEMPLATE/1.bug.yml, .github/ISSUE_TEMPLATE/2.feature.yml, .github/ISSUE_TEMPLATE/config.yml
+
+---
+id: chatgpt-on-wechat-instinct-file-naming
+trigger: "When creating or renaming a file in the codebase"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/chatgpt-on-wechat
+---
+
+# Chatgpt On Wechat Instinct File Naming
+
+## Action
+
+Use PascalCase for file names
+
+## Evidence
+
+- Pattern in namingConventions.files: PascalCase
+
+---
+id: chatgpt-on-wechat-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/chatgpt-on-wechat
+---
+
+# Chatgpt On Wechat Instinct Function Naming
+
+## Action
+
+Use camelCase for function names
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: chatgpt-on-wechat-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/chatgpt-on-wechat
+---
+
+# Chatgpt On Wechat Instinct Class Naming
+
+## Action
+
+Use PascalCase for class names
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: chatgpt-on-wechat-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/chatgpt-on-wechat
+---
+
+# Chatgpt On Wechat Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: chatgpt-on-wechat-instinct-import-style
+trigger: "When importing modules in TypeScript files"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/chatgpt-on-wechat
+---
+
+# Chatgpt On Wechat Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: chatgpt-on-wechat-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/chatgpt-on-wechat
+---
+
+# Chatgpt On Wechat Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: chatgpt-on-wechat-instinct-git-commit-format
+trigger: "When making a git commit"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/chatgpt-on-wechat
+---
+
+# Chatgpt On Wechat Instinct Git Commit Format
+
+## Action
+
+Use the conventional commit format with a prefix (e.g., docs: update issue/pr templates)
+
+## Evidence
+
+- Pattern in commits.type: conventional
+- Pattern in commits.prefixes: ["docs"]
+- Examples: 'docs: add contributing guide and issue/PR templates'
+
+---
+id: chatgpt-on-wechat-instinct-update-templates-workflow
+trigger: "When someone wants to improve or add documentation and templates for contributing, issues, or pull requests"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/chatgpt-on-wechat
+---
+
+# Chatgpt On Wechat Instinct Update Templates Workflow
+
+## Action
+
+Edit or create files in .github/ISSUE_TEMPLATE/, .github/PULL_REQUEST_TEMPLATE.md, and CONTRIBUTING.md, then commit with a docs-related message
+
+## Evidence
+
+- Workflow: update-contribution-and-issue-templates
+- Files involved: .github/ISSUE_TEMPLATE/1.bug.yml, .github/ISSUE_TEMPLATE/2.feature.yml, .github/ISSUE_TEMPLATE/config.yml, .github/PULL_REQUEST_TEMPLATE.md, CONTRIBUTING.md
+- Commit examples: 'docs: add contributing guide and issue/PR templates'
+
